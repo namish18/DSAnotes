@@ -85,3 +85,17 @@ find the sum and squared sum of elements from 1 to n.
 Find the sum and squared sum of array elements.
 The difference between each sum and squared sum will give two equations and then it is just two variables two equation problem.
 TC: O(n)
+
+# Next Permutation
+Input : given an array of integers
+Task: Find the next greater permutation
+
+
+### Brute
+Find all possible permutation and then  find the next greater one
+TC: O(n!)
+
+### Optimal
+- Find the longest common prefix: Start a loop from right and check if(arr[i]<arr[j])
+- From the rest array find the just bigger element and swap it
+- Reverse the rest of the array
